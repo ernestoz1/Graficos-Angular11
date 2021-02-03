@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 -Char.js
 
-
+![](c1.png)
 
 ## Development server
 
