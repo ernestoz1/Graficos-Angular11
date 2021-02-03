@@ -12,15 +12,36 @@ export class BarChartComponent implements OnInit {
   barChartOptions: ChartOptions = {
     responsive: true,
   };
-  barChartLabels: Label[] = ['Apple', 'Banana', 'Kiwifruit', 'Blueberry', 'Orange', 'Grapes'];
+barChartLabels: Label[] = [
+    'Apple',
+    'Banana',
+    'Kiwifruit',
+    'Blueberry',
+    'Coconout',
+    'Pineaple',
+    'Orange',
+    'Grapes',
+  ];
   barChartType: ChartType = 'bar';
   barChartLegend = true;
   barChartPlugins = [];
 
-  barChartData: ChartDataSets[] = [
-    { data: [45, 37, 60, 70, 46, 33], label: 'Best Fruits' }
+  barChartData: ChartDataSets[] = [{ 
+    data: [
+      45, 27, 60, 70, 35, 50, 120, 90
+    ],
+    backgroundColor:[
+      ('#1f77b4'),
+      ('#ffe135'),
+      ('#90C825'),
+      ('#4F86F7'),
+      ('#FFFAF0'),
+      ('#FFE12D'),
+      ('#FA5B3C'),
+      ('#6f2da8'),
+    ], 
+    label: 'Best Fruits' }, 
   ];
-  
   constructor() { }
 
   ngOnInit(): void {
